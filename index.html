@@ -46,7 +46,7 @@
             background: red;
             backdrop-filter: blur(10px);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-            padding: 1.5rem 5%;
+            padding: 0.8rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -72,10 +72,16 @@
         }
 
         .navbar-logo {
-            height: 70px;
+            height: 150px;
             width: auto;
             object-fit: contain;
             background: transparent;
+            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)) brightness(1.1);
+            transition: filter 0.3s ease;
+        }
+
+        .navbar-logo:hover {
+            filter: drop-shadow(0 0 25px rgba(255, 255, 255, 1)) brightness(1.2);
         }
 
         .logo-wrapper {
@@ -131,7 +137,7 @@
 
         .logo-tagline {
             font-size: 0.75rem;
-            color: var(--accent-pink);
+            color: #ffffff;
             font-weight: 600;
             font-family: 'League Spartan', sans-serif;
             letter-spacing: 0.8px;
@@ -148,7 +154,7 @@
         .nav-menu a {
             text-decoration: none;
             color: #ffffff;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 1.3rem;
             text-transform: uppercase;
             position: relative;
@@ -1115,7 +1121,7 @@
     <!-- Navigation Bar -->
     <nav>
         <div class="logo-section">
-            <!-- Logo will be placed here -->
+            <img src="Llogo.png" alt="JOJO Ice Creams Logo" class="navbar-logo">
         </div>
         <ul class="nav-menu">
             <li><a href="#home">Home</a></li>
