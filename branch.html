@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Branches - JOJO Ice Creams</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=League+Spartan:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=League+Spartan:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -56,7 +59,6 @@
             width: auto;
             object-fit: contain;
         }
-
         .nav-menu {
             display: flex;
             gap: 3rem;
@@ -327,6 +329,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="navigation">
@@ -360,7 +363,8 @@
     <!-- Branches Section -->
     <section class="branch-container">
         <h1 class="section-title">Our Branches</h1>
-        <p class="section-subtitle"><span style="color: var(--accent-pink); font-weight: 700;">Find Us</span> <span style="color: var(--accent-pink); font-weight: 700;">Near You</span></p>
+        <p class="section-subtitle"><span style="color: var(--accent-pink); font-weight: 700;">Find Us</span> <span
+                style="color: var(--accent-pink); font-weight: 700;">Near You</span></p>
 
         <div class="branches-container">
             <!-- Branch Card 1 -->
@@ -371,7 +375,8 @@
                 <div class="branch-info">
                     <h3 class="branch-name">JOJO Ice Cream - Main Branch</h3>
                     <div class="branch-detail">
-                        <span><strong>Address:</strong> 12/13, Seethapatti/Ganapathipalayam, Hotthiam/Katuputhur, Tiruchirapalli, Tamil Nadu, 621207</span>
+                        <span><strong>Address:</strong> 12/13, Seethapatti/Ganapathipalayam, Hotthiam/Katuputhur,
+                            Tiruchirapalli, Tamil Nadu, 621207</span>
                     </div>
                     <div class="branch-detail">
                         <span><strong>Cell:</strong> +91 9994230734</span>
@@ -389,21 +394,21 @@
         const hamburgerBtn = document.getElementById('hamburgerBtn');
         const hamburgerMenu = document.getElementById('hamburgerMenu');
 
-        hamburgerBtn.addEventListener('click', function() {
+        hamburgerBtn.addEventListener('click', function () {
             hamburgerBtn.classList.toggle('active');
             hamburgerMenu.classList.toggle('active');
         });
 
         // Close menu when a link is clicked
         document.querySelectorAll('.hamburger-menu a').forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function () {
                 hamburgerBtn.classList.remove('active');
                 hamburgerMenu.classList.remove('active');
             });
         });
 
         // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             if (!e.target.closest('.nav-right')) {
                 hamburgerBtn.classList.remove('active');
                 hamburgerMenu.classList.remove('active');
@@ -411,4 +416,5 @@
         });
     </script>
 </body>
+
 </html>
