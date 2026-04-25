@@ -50,22 +50,12 @@
             z-index: 1000;
         }
 
-        .logo-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .navbar-logo {
+        .lllooo {
+            padding-top: 15px;
             height: 150px;
             width: auto;
             object-fit: contain;
-            background: transparent;            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8)) brightness(1.1);
-            transition: filter 0.3s ease;
         }
-
-        .navbar-logo:hover {
-            filter: drop-shadow(0 0 25px rgba(255, 255, 255, 1)) brightness(1.2);        }
 
         .nav-menu {
             display: flex;
@@ -339,10 +329,8 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav>
-        <div class="logo-section">
-            <img src="Llogo.png" alt="JOJO Ice Creams Logo" class="navbar-logo">
-        </div>
+    <nav class="navigation">
+        <img src="Llogo.png" alt="logo" class="lllooo">
         <ul class="nav-menu">
             <li><a href="index.html#home">Home</a></li>
             <li><a href="index.html#flavors">Flavours</a></li>
@@ -350,6 +338,7 @@
             <li><a href="branch.html">Branch</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="index.html#Franchise Enquiry">Franchise Enquiry</a></li>
+            <li></li>
         </ul>
         <div class="nav-right">
             <button class="hamburger-btn" id="hamburgerBtn">
